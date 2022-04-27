@@ -4,10 +4,8 @@
   "description": "Demo slider responsly.js",
   "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build": "parcel build",
-    "go": "npm i && npm run build && npm run start"
+    "build": "parcel build"
   },
   "author": "marcin86mak@gmail.com",
   "license": "ISC",

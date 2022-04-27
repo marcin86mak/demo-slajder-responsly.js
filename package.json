@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
     "build": "parcel build",
-    "go": "npm run build && npm run start"
+    "go": "npm i && npm run build && npm run start"
   },
   "author": "marcin86mak@gmail.com",
   "license": "ISC",

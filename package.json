@@ -2,7 +2,6 @@
   "name": "demo-slajder-responsly",
   "version": "1.0.0",
   "description": "Demo slider responsly.js",
-  "source": "index.html",
   "main": "index.html",
   "scripts": {
     "start": "parcel",

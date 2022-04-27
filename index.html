@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo-slajder-responsly</title>
+    <link rel="stylesheet" href="src/slidy/slidy.css">
+</head>
+<body>
+
+<h4>Demo</h4>
+<h5>Podpowiedź, że możesz użyć klawiszy lewo/prawo</h5>
+
+<div id="slidyBanner" class="slidyContainer" title="Your tooltip text">
+    <div class="slidySlides">
+
+        <!-- Each slide is wrapped in figure section -->
+
+        <!-- Slide 1 -->
+        <!-- add the 'slidyCurrent' class to which slide you want as default -->
+        <figure class="slidyCurrent">
+            <!-- Your context goes here -->
+            <img  alt="Uyuni, Bolivia" src="src/img/banner/16 Uyuni Salt Flats - 61 - Banner.jpg">
+            <!-- Use the figcaption element to add captions -->
+            <br/>
+            <figcaption>An Image</figcaption>
+        </figure>
+
+        <!-- Slide 2 -->
+        <figure>
+            <img  alt="Shanghai, China"  src="src/img/banner/2 Shanghai - 38 - Banner.jpg">
+            <figcaption>Another image</figcaption>
+        </figure>
+
+        <!-- Slide 3 -->
+        <figure>
+            <div style="margin:3em 2em">
+                <h3> I am some text</h3>
+                <h4> Your not limited to images, you can have what ever you want </h4>
+                <h4> Press next to see how to wire this baby up </h4>
+            </div>
+            <figcaption>Text</figcaption>
+        </figure>
+
+        <!-- Add more slides as necessary -->
+
+        <figure>
+            <div style="margin:3em 2em">
+                <h4>Add references, make sure jQuery is available</h4>
+                <pre><code>
+    &lt;link rel="stylesheet" href="slidy.css"&gt;
+    &lt;script src="slidy.js"&gt;&lt;/script&gt;
+                                </code></pre>
+                <figcaption>Step 1</figcaption>
+            </div>
+        </figure>
+
+        <figure>
+            <div style="margin:3em 2em">
+                <h4>Add boilerplate HTML to wherever your want the slideshow. This is usually some responsive container</h4>
+                <pre><code>
+    &lt;div id="slidyBanner" class="slidyContainer" title="Your tooltip text"&lt;
+        &lt;div class="slidySlides"&gt;
+
+            &lt;!-- Each slide is wrapped in figure section --&gt;
+
+            &lt;!-- Slide 1 --&gt;
+            &lt;!-- add the 'slidyCurrent' class to which slide you want as default --&gt;
+            &lt;figure class="slidyCurrent"&gt;
+                &lt;!-- Your context goes here --&gt;
+                &lt;img  alt="Uyuni, Bolivia" src="img/banner/16 Uyuni Salt Flats - 61 - Banner.jpg"&gt;
+                &lt;!-- Use the figcaption element to add captions --&gt;
+                &lt;figcaption&gt;An Image&lt;/figcaption&gt;
+            &lt;/figure&gt;
+
+            &lt;!-- Slide 2 --&gt;
+            &lt;figure&gt;
+                &lt;img  alt="Shanghai, China"  src="img/banner/2 Shanghai - 38 - Banner.jpg"&gt;
+                &lt;figcaption&gt;Another image&lt;/figcaption&gt;
+            &lt;/figure&gt;
+
+            &lt;!-- Slide 3 --&gt;
+            &lt;figure&gt;
+                &lt;p&gt; I am some text&lt;/p&gt;
+                &lt;p&gt; Your not limited to images, you can have what ever you want &lt;/p&gt;
+                &lt;figcaption&gt;Text&lt;/figcaption&gt;
+            &lt;/figure&gt;
+
+            &lt;!-- Add more slides as necessary --&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code></pre>
+            </div>
+            <figcaption>Step 2</figcaption>
+        </figure>
+
+        <figure>
+            <div style="margin:3em 2em">
+                <h4>Wire up with options</h4>
+                <pre><code>
+    $('.slidyContainer').slidy({
+        // Options go here, see slidy.js
+        // These the defaults so don't only need to be specified if they are changed
+
+        throttle: false, // Set to true, and include jQuery throttle plugin (http://benalman.com/projects/jquery-throttle-debounce-plugin/)
+        throttleTime: 500, // number of ms to wait for throttling
+        showArrows: true, // Show arrows for next/prev image
+        movePrev: 'movePrev', // Div id to use for previous button
+        moveNext: 'moveNext', // Div id to use for next button
+        useKeybord: true, // use keys defined below to expand / collapse sections
+        auto: false,       // Start slideshow automatically
+        interval: 6000,     // Time between each slide
+        initialInterval: 10000  // Initial interval when page loads
+
+    });
+                                </code></pre>
+            </div>
+            <figcaption>Step 3</figcaption>
+        </figure>
+
+    </div>
+</div>
+<script src="public/js/bundle.js"></script>
+
+<script>
+    $('.slidyContainer').slidy({
+        auto: true,
+    });
+</script>
+
+</body>
+</html>

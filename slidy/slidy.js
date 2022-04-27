@@ -1,4 +1,3 @@
-
 /*
 * © 2011 D MALAM
 * MIT License
@@ -60,7 +59,7 @@
            var next = mod((current - 2 ), slidesCount) + 1;
 
           if(current == start){
-            for (i = start; i < slidesCount;  i++){
+            for (var i = start; i < slidesCount;  i++){
               moveOffScreenLeft($(container).find('.slidySlides figure:nth-child('+i+')'));
             }
             moveOnScreen($(container).find('.slidySlides figure:nth-child('+slidesCount+')'))
@@ -76,7 +75,7 @@
            var next = (current % slidesCount) + 1
 
           if(current == slidesCount){
-            for (i = slidesCount; i > next; i--){
+            for (var i = slidesCount; i > next; i--){
               moveOffScreenRight($(container).find('.slidySlides figure:nth-child('+i+')'));
             }
             moveOnScreen($(container).find('.slidySlides figure:nth-child('+start+')'));

@@ -1,4 +1,3 @@
-
 /*
 * © 2011 D MALAM
 * MIT License
@@ -38,7 +37,7 @@
 
 .slidyContainer .movePrev, .slidyContainer .moveNext {
 	position: absolute;
-	background: url('arrows.png');
+	background: url('./arrows.png');
 	width: 33px;
 	height: 33px;
 	display: inline;

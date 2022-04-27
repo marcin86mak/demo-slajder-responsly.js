@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Demo slider responsly.js",
   "source": "src/index.html",
+  "main": "src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
